@@ -74,8 +74,14 @@ While there are a number of version control systems available, this question wil
  
  1. On their local machine they ensure their copy of the main code base is up-to-date. Whilst on the main branch, they can do this using a ```git pull``` or other commands like ```git fetch origin``` and ```get reset --hard origin/main```.  
  2. Still local, create a new branch and give it the name of the feature to be developed. For example, ```git checkout -b new-menu-feature```.  
- 3. Develop the feature code on the feature branch, making regular commits with the usual commands: ```git add .```, ```git commit -m "message"```. It's also important to push the feature branch to the remote repository. This allows other team members to view the progress of the feature branch. For example, ```git push -u origin new-menu-feature```.
+ 3. Develop the feature code on the feature branch, making regular commits with the usual commands: ```git add .```, ```git commit -m "message"```. It's also important to push the feature branch to the remote repository. This allows other team members to view/review the progress of the feature branch. For example, ```git push -u origin new-menu-feature```.
  4. Other team members might review the commits. Changes are made locally in response to any feedback and then pushed back up to the remote feature branch. 
- 5.  
+ 5. When the developer has finished developing the feature they commit their recent changes locally and push back up to the remote feature branch. They then file a pull request to merge the new branch onto the main codebase. This triggers a review by other developers, including one or more senior developers to review the code before it is merged into the main branch.
+ 6. Once all feedback regarding the new feature has been addressed and the pull request has been accepted, the developer (on their local machine) can merge the feature branch into the main codebase. This can be done by moving to the main branch, updating the local main inline with the remote (central) version and merging the feature branch onto the main branch. For example the following commands can be used to achieve this.   
+    - Move to the main branch:```git checkout main```    
+    - update the local version of main inline with the central version: ``` git pull```
+    - merge the local feature branch onto local main: ```git pull origin new-menu-feature```
+    - pushing all updates back to the central repository: ```git push```  
+(Atlassian, 2022b)
 
 
