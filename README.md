@@ -84,4 +84,28 @@ While there are a number of version control systems available, this question wil
     - pushing all updates back to the central repository: ```git push```  
 (Atlassian, 2022b)
 
+<hr>  
+
+## **Question 5:**   
+
+*Provide an overview and description of a standard software testing process (e.g. manual testing).*  
+
+Manual testing involves manually checking new software against a written test plan, with the aim of determining whether the software functions as it should. Any instance of the software not perform as expected is identified as a bug and appropriate measures are taken to correct the issue. Essentially, manual testing is used to analyse software performance from the perspective of the end user (Jash Unadkat, 2021). 
+
+### Manual testing stages  
+Manual testing is typically performed in stages. The testing stages are listed below.  
+1. **Unit testing:** 
+Unit testing is done early during the development process and involves testing the individual components of the application as they are developed. For example, this could involve testing a new api 'get' route using postman. Unit testing is performed by someone with knowledge of the underlying code, with this type of testing known as transparent testing.
+
+2. **Integration testing:**  
+Integration testing is done after unit testing and involves testing how multiple units/components perform together as a whole. For example, a 'post' route that redirects to a 'get' route when completed could be tested to ensure both routing components perform as expected.     
+
+3. **System testing:**  
+
+4. **User interface testing:**  
+
+5. **Acceptance testing:**
+
+
+### Types of manual testing  
 
