@@ -101,6 +101,7 @@ Unit testing is done early during the development process and involves testing t
 Integration testing is done after unit testing and involves testing how multiple units/components perform together as a whole. For example, a 'post' route that redirects to a 'get' route when completed could be tested to ensure both routing components perform as expected.     
 
 3. **System testing:**  
+System testing...
 
 4. **User interface testing:**  
 
