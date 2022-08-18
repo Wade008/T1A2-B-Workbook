@@ -22,7 +22,7 @@
 
 *Discuss the implementation of Agile project management methodology.*  
 
-In general, the agile project management approach outlines a set values and principles upon which specific agile project management methodologies are based. These values include placing more importance on:
+In general, the agile project management approach outlines a set of values and principles upon which specific agile project management methodologies are based. These values include placing more importance on:
 - People and communication rather than processes;
 - Properly functioning software over documentation;
 - Customer focused behaviour rather than contractual requirements; and
@@ -88,7 +88,7 @@ While there are a number of version control systems available, this question wil
 
 *Provide an overview and description of a standard software testing process (e.g. manual testing).*  
 
-Manual testing involves manually checking new software against a written test plan, with the aim of determining whether the software functions as it should. Any instance of the software not perform as expected is identified as a bug and appropriate measures are taken to correct the issue. Essentially, manual testing is used to analyse software performance from the perspective of the end user (Jash Unadkat, 2021). 
+Manual testing involves manually checking new software against a written test plan, with the aim of determining whether the software functions as it should. Any instance of the software not performing as expected is identified as a bug and appropriate measures are taken to correct the issue. Essentially, manual testing is used to analyse software performance from the perspective of the end user (Jash Unadkat, 2021). 
 
 ### Manual testing stages  
 Manual testing is typically performed in stages. The testing stages are listed below.  
@@ -168,6 +168,8 @@ In addition to the three types of data integrity listed above, a database develo
 
 ## **Question 11**  
 *Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.*  
+
+DML - use postgres documentation
 
 
 
