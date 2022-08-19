@@ -116,6 +116,7 @@ Acceptance testing is done to ensure the application as a whole is fit for purpo
 *Discuss and analyse requirements related to information system security and how they relate to the project.*  
 
 
+
 <hr>  
 
 ## **Question 7**  
@@ -169,9 +170,64 @@ In addition to the three types of data integrity listed above, a database develo
 ## **Question 11**  
 *Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.*  
 
-DML - use postgres documentation
+Interaction with data in the relational database model is performed using Structured Query Language (SQL). SQL statements can be divided into two broad categories: data definition language (DDL) and data manipulation language (DML), with the latter used to manipulate the data within the database tables (Csulb.edu, 2022). Using DML, data within a relational database is added, removed, changed and retrieved in the following ways.
 
+### Adding data  
 
+Adding data to a table in a relational database is done using the INSERT statement. This is used to add new rows to a table in the database. Importantly a new INSERT statement is required for every new row of data. And the comma delimited values to be added to the table must match the table structure and have the required data type for each attribute (Csulb.edu, 2022). The pattern for the INSERT statement is shown below:
+
+```sql 
+INSERT INTO <table name> VALUES (<value 1>, ... <value n>);
+```
+(Csulb.edu, 2022)
+
+An example of inserting data into a fictional PRODUCTS table is shown below:
+
+```sql
+INSERT INTO products (product_no, name, price) VALUES (1, 'Cheese', 9.99);
+INSERT INTO products (name, price, product_no) VALUES ('Cheese', 9.99, 1);
+```
+(PostgreSQL Documentation, 2022a)
+
+### Removing data  
+
+Data is removed from a relational database table using the DELETE statement. And a WHERE clause is used to indicate which particular row/s should be deleted. If the WHERE clause is omitted, every row of the table will be deleted (Csulb.edu, 2022). The pattern for the DELETE statement is shown below:
+
+```sql
+DELETE FROM <table name>
+WHERE <condition>;
+```
+Using the fictional PRODUCTS table mentioned above, all rows where the price = 10 will be deleted:
+
+```sql
+DELETE FROM products WHERE price = 10;
+```
+(PostgreSQL Documentation, 2022c)
+
+### Changing data  
+
+Data in a database table can be changed using the UPDATE statement along with a SET and WHERE clause. The SET clause indicates the attribute and the new value to be updated. Similar to the DELETE statement, the WHERE clause is used to indicate the row or rows to be updated (Csulb.edu, 2022). The pattern for the UPDATE statement is shown below:  
+
+```sql
+UPDATE <table name>
+SET <attribute> = <expression>
+WHERE <condition>;
+```
+Again using the PRODUCTS table example, the UPDATE statement below is used to change all values in the price column to 10 where they are currently equal to 5:
+
+```sql
+UPDATE products SET price = 10 WHERE price = 5;
+```
+(PostgreSQL Documentation, 2022b)
+
+### Retrieving data  
+
+Data can be retrieved from a database using the SELECT statement. Generally, a SELECT statement typically uses a FROM clause, which indicates the table or tables to be used in the query. The SELECT statement can be used to view all columns of data from one or more tables, specific columns of data from one or more tables as well as specific columns and rows of data from one or more tables. A where clause can be used to filter the required rows of data based on a stated condition (PostgreSQL Documentation, 2022d). The general pattern for a SELECT statement is:
+
+```sql
+SELECT * FROM table1;
+```
+(PostgreSQL Documentation, 2022d).
 
 
 
