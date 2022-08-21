@@ -143,14 +143,22 @@ Sensitive data to be stored for this flask project can be encryption using anoth
 3. **Security configurations:** It's important to ensure sensitive information contained in the API development code is not pushed to an external server and made visible for others to see. For example, security keys and passwords need to be prevented from being pushed to an external server (Jones, 2018).  
 In relation to this project, all sensitive information should be included in '.gitignore' file (assuming git/GitHub is used) to ensure API keys, secrets and passwords are not pushed to GitHub during development and the hosting provider later during production (Heddings, 2021)     
 
-4. **Exception management:**   
+4. **Exception management:** It's important to develop generic error/exception messages when developing a web API. This is done for a number of reasons. Firstly, to ensure that the end user is told in plain English that an exception has occurred. Secondly, to not provide valuable error information for potential hackers (Jones, 2018).
+In relation to the flask project, it's possible to add custom error/exception messages when developing the application. For example the ```APIException``` class from the flask_restful package can be used to raise a custom error if no data is included in a post request, thus hiding the raw error: ```TypeError: NoneType error...```(Vaati, 2020).
+
+5. **Auditing and logging:** logs can provide a record of suspicious activity and help identify bad actor's identity (Jones, 2018).
+In relation to the project, flask security makes it possible to implement login tracking, which can track the following events:
+    - Last login date
+    - Current login date
+    - Last login IP address
+    - Current login IP address
+    - Total login count  
+    (Readthedocs.io, 2022).
 
 
 
-5. **Quality assurance and testing:** external testing
 
 
-(Jones, 2018) 
 
 
 <hr>  
