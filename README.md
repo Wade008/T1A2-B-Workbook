@@ -123,7 +123,7 @@ Information system security is an ever-changing and expanding field that covers 
 
 - **Availability:** This feature relates to the timeframe in which an authorised user can access or modify data, with the timeframe set to suit the security requirements of a given organisation (GeeksforGeeks, 2020).   
 
-In relation to this project, it is essential that user authentication is implemented as part of the development process in order to meet the confidentiality and integrity requirements. Furthermore, encrypting sensitive data held in the database is also essential. However, it is also considered best practice to implement role management and access control, with the aim of giving as little privilege as possible to limit the chances of a data breach. Multifactor authentication and timed access is also important to consider for this project, with timed access helping to meet the availability requirement (Jones, 2018). 
+In relation to this project, it is essential that user authentication is implemented as part of the development process in order to meet the confidentiality and integrity requirements. Furthermore, encrypting sensitive data held in the database is also essential. However, it is also considered best practice to implement role management and access control, with the aim of giving as little privilege as possible to limit the chances of a data breach. Multifactor authentication and timed access is also important to consider for this project, with timed access helping to meet the availability requirement mentioned above (Jones, 2018). 
 
 It is important to consider the end user's experience and the sensitivity of the data when developing an information security program. A user needs to be able to access the relevant data without being too impeded; however, if the project data in extremely sensitive then additional measures like password expiration, account lock-outs and SSL certification should be implemented (Jones, 2018).      
 
@@ -132,7 +132,25 @@ It is important to consider the end user's experience and the sensitivity of the
 ## **Question 7**  
 *Discuss common methods of protecting information and data and how you would apply them to the project.*  
 
+Several common methods of protecting information and data for web applications are listed below.
 
+1. **Authentication, role management and access control:** This involves giving authenticated user as little access to data as possible, provided they still get what they need from the system. This can be achieved using strong password requirements, multifactor authentication, role based authorisation, password expiration and SSL certificates to prevent sensitive account information being displayed in transit (Jones, 2018).  
+In relation to the flask application for this project, authentication and access control can be implemented using the latest flask security package, which can be installed from the python package index (pip) with ```pip install Flask-Security-Too``` (PyPI, 2022). Specifically, session based authentication and role/identity based access can be implemented for the project using various package integrated within the flask security package, including flask-login and flask-principal (Readthedocs.io, 2022).     
+
+2. **Data encryption:** Essentially, encryption is used to mask sensitive data like passwords whilst stored at rest in a database or while in transit. Encryption is the most common method of protecting sensitive data (Jones, 2018).
+Sensitive data to be stored for this flask project can be encryption using another package included with the flask security package called 'passlib', which is used to hash passwords. By default, passwords are hashed using bcrypt but can be configured with more advanced hashing algorithms (Readthedocs.io, 2022).  
+
+3. **Security configurations:** It's important to ensure sensitive information contained in the API development code is not pushed to an external server and made visible for others to see. For example, security keys and passwords need to be prevented from being pushed to an external server (Jones, 2018).  
+In relation to this project, all sensitive information should be included in '.gitignore' file (assuming git/GitHub is used) to ensure API keys, secrets and passwords are not pushed to GitHub during development and the hosting provider later during production (Heddings, 2021)     
+
+4. **Exception management:**   
+
+
+
+5. **Quality assurance and testing:** external testing
+
+
+(Jones, 2018) 
 
 
 <hr>  
