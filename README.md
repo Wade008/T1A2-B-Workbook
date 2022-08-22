@@ -156,15 +156,38 @@ In relation to the project, flask security makes it possible to implement login 
     (Readthedocs.io, 2022).
 
 
-
-
-
-
-
 <hr>  
 
 ## **Question 8**  
 *Research what your legal obligations are in relation to handling user data and how they can be met for the project.*  
+
+Any online business in Australia that stores and collects data from customers must comply with the Australian *Privacy Act 1988*. In short, an online business must make their customers aware of what data will be stored; for example, name, address, phone number and credit card. Moreover, online businesses are legal obligated under the *Privacy Act 1988*, to inform customers of the measures that will be taken to protect their personal information. This might include using data encryption, SSL (secure socket layer) and DCI-PSS (payment card industry data security standard) (Qld.gov.au, 2022). Importantly, an online business may also need to comply with international privacy laws depending on the jurisdiction they intend to operate in. For example, if an online business offers goods and services in the European Union (EU), they will need to comply with EU privacy laws such as the General Data Protection Regulation (GDPR) (The Office of the Australian Information Commissioner, 2018). 
+
+The Australian Privacy Principles (APPs) are a principles-based law that can be used to help an organisation meet its legal obligations under the *Privacy Act 1988* (The Office of the Australian Information Commissioner, 2022). Specifically, there are 13 APPs. These include: 
+- APP 1: Open and transparent management of personal information.
+- APP 2: Anonymity and pseudonymity.
+- APP 3: Collection of solicited personal information.
+- APP 4: Dealing with unsolicited personal information.
+- APP 5: Notification of the collection of personal information.  
+- APP 6: Use or disclosure of personal information.
+- APP 7: Direct marketing.
+- APP 8: Cross-border disclosure of personal information.
+- APP 9: Adoption, use or disclosure of government related identifiers.  
+- APP 10: Quality of personal information.  
+- APP 11: Security of personal information.
+- APP 12: Access to personal information.
+- APP 13: Correction of personal information. 
+
+In order to meet the relevant legal obligations listed above, the flask project could: 
+- Ensure the level of protection applied to customer data whilst at rest and in transit is robust. This will help meet APP 11. Notably, this can be done using and correctly configuring the flask security package (Readthedocs.io, 2022). 
+- Developing a privacy policy that informs customers about what personal information will be collected, what will be done with the information and how their information will be protected (Qld.gov.au, 2022). This could a help meet the obligations under APPs 1, 3, 5, 6, 8, 11.
+- Ensuring the application allows the customer to easily access, update and de-identify their personal information if required. This will help to meet APPs 2, 10, 12. 
+- Publishing the privacy policy on the application's publicly facing website (Qld.gov.au, 2022). 
+- Seeking further legal advice to ensure all privacy requirements have been meet (Qld.gov.au, 2022). 
+
+
+
+
 
 
 
@@ -274,4 +297,9 @@ SELECT * FROM table1;
 <hr>  
 
 ## **Question 12**  
+
+<hr>  
+
+
+## References  
 
