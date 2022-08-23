@@ -15,6 +15,11 @@
 
 *Identify a database management system (DBMS) commonly used in web applications (including Flask) and discuss the pros and cons of this database.*  
 
+PostgreSQL is an object-relational database system 
+
+(Postgresql.org, 2022)
+
+(AltexSoft, 2019)
 
 <hr>  
 
