@@ -8,6 +8,11 @@
 
 *Describe the architecture of a typical Flask application.*  
 
+Flask is known as a microframework, which means its core is simple but extensible. Flask can be extended by installing additional packages, if required. For example, Flask does not include a database layer or form validation or security, by default; however, various extension can be installed for database integration, form validation and even authentication (Palletsprojects.com, 2022). 
+
+In general, modern web applications follow a layered architecture comprised of presentation, business, persistence and database layers. 
+
+![Layers of web architecture](https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture3.png)
 
 
 
