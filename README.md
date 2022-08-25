@@ -9,17 +9,30 @@
 *Describe the architecture of a typical Flask application.*  
 
 
+
+
 <hr>  
 
 ## **Question 2:**  
 
 *Identify a database management system (DBMS) commonly used in web applications (including Flask) and discuss the pros and cons of this database.*  
 
-PostgreSQL is an object-relational database system 
+PostgreSQL is an open source, object-relational database system the utilises the Structured Query Language (SQL)(Postgresql.org, 2022). PostreSQL works well for many programming languages including Pythin, .Net, C, C++, Java Node.js(JavaScript) and PHP to name a few (ScaleGrid, 2021). Like all technologies, there are pros and cons associated with using PostgreSQL.
 
-(Postgresql.org, 2022)
+### Pros of PostgreSQL   
 
+- **Scalability:** the PostgreSQL DBMS is capable of scaling vertically, allowing a web application's storage to easily scale as the customer base increases.   
+- **Custom data type support:** PostgreSQL supports a significant number of data types by default, including document types like XML, JSON. PostgreSQL is a relational database that comes with NoSQL features. Moreover, it's possible for a user to define their own custom data types, giving a web application greater flexibility around the type of information that can be stored in the database.
+- **Third-party integration:** many external tools can be integrated into PostgreSQL. For example, ClusterControl can be integrated to help manage scaling for both SQL and NoSQL databases.    
+- **Open-source and community support:** being open source database makes PostgreSQL a cost-effective DBMS. It also a large community support network that provides free, fast help when required.   
+(AltexSoft, 2019)  
+
+### Cons of PostgreSQL
+
+- **Documentation consistency:** the documentation for PostgreSQL is sometimes inconsistent or incomplete when it comes to some of its features. This makes finding a solution to some problems challenging at times.
+- **Limited auditing and reporting tools:** PostgreSQL does not have an easy way to audit a database to determine its current condition. Database administrators are required to continuously check the state of the database and could possibly miss an important issue that leads to failure.     
 (AltexSoft, 2019)
+
 
 <hr>  
 
