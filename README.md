@@ -8,13 +8,33 @@
 
 *Describe the architecture of a typical Flask application.*  
 
+### What is Flask?   
+
 Flask is known as a microframework, which means its core is simple but extensible. Flask can be extended by installing additional packages, if required. For example, Flask does not include a database layer or form validation or security, by default; however, various extension can be installed for database integration, form validation and even authentication (Palletsprojects.com, 2022). 
 
-In general, modern web applications follow a layered architecture comprised of presentation, business, persistence and database layers. 
+### What is web application architecture?   
+
+Essentially, web application architecture is a plan that describes the interactions between components, databases, middleware, user interfaces and servers in an application (Hiren Dhaduk, 2021.
+
+In general, modern web applications use a layered architecture comprised of presentation, business logic, persistence (database access) and data service layers (Hiren Dhaduk 2021; Lanars LLC 2021). Notably, Flask is very useful for developing the business logic layer of a web application. A modern Flask application also serves HTML, CSS and JavaScript to provide a presentation layer and is also capable of working with any database to provide persistence and data service layers (Lott, 2022). The image below outlines the general layers of a modern web application's architecture. 
 
 ![Layers of web architecture](https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture3.png)
+(Hiren Dhaduk, 2021)
+
+### A typical Flask application   
+
+The architecture of a typical flask application is explained below in the context of the broader web application architecture mentioned above. What is more, this explanation will assume the Flask application has been developed using the Model View Controller (MVC) design pattern (Silveira, 2021).    
+
+1. **The presentation layer:** This is the layer that will interface with the user of the web app. *On a broader level, this layer is known as the client side* of the application and usually consists of HTML, CSS and JavaScript files. These file could be rendered in the user's browser to show objects like forms, tables and/or charts of information. These file would normally be stored in a 'views' folder within the Flask application project directory.  It's also possible the folder could be named 'templates' in some cases. The components of this layer allow a user to send read, create, update or delete (CRUD) requests within the application. However, for this layer to work, information must pass through the business logic layer (Silveira, 2021). 
+
+2. **The business logic layer:** *Note: all the layer from this point on are collectively know as the server side of the application.* This layer defines the rules for the application. In a typical Flask app, these rules are known as controllers. Controllers are one or more files of python functions that normally processes browser requests, execute the additional logic associated with the requests (such as accessing data in a database) and return data back to the presentation layer. In a normal Flask app, controllers work closely with schemas, which facilitate data movement between the presentation layer and the business logic layer. Controllers use routes to coordinate the CRUD operations for the application by deciding how to handle GET, POST, PUT and DELETE requests coming from the presentation layer and work closely with the persistence layer (Hiren Dhaduk, 2021).
+
+3. **Persistence (database access) layer:** The persistence layer works closely with the business logic layer and provides a portal to the stored data in the database service layer. In relation to Flask, models are used to link the flask application with the database/s. Models are python code used to interact with the database and can translate python code into the database language like SQL. For example a Flask application using a PostgreSQL database could use a python library called Flask-SQLAlchemy to allow the application to communicate with the database using python code. Essentially, models are used to facilitate the CRUD operations for the application by executing the GET, POST, PUT and DELETE requests coming from the presentation layer via the business logic layer (Hiren Dhaduk 2021; Lanars LLC 2021; Silveira, 2021).  
+
+4. **The data service layer:** This layer holds all the application data and ensures the security of the data. IT's quite common for a Flask application to use a PostgreSQL database to store the application data. 
 
 
+Important - mention config to allow connections etc.
 
 <hr>  
 
