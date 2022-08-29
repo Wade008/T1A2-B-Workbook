@@ -31,7 +31,7 @@ The architecture of a typical flask application is explained below in the contex
 
 3. **Persistence (database access) layer:** The persistence layer works closely with the business logic layer and provides a portal to the stored data in the database service layer. In relation to Flask, models are used to link the flask application with the database/s. Models are python code used to interact with the database and can translate python code into the database language like SQL. For example a Flask application using a PostgreSQL database could use a python library called Flask-SQLAlchemy to allow the application to communicate with the database using python code. Essentially, models are used to facilitate the CRUD operations for the application by executing the GET, POST, PUT and DELETE requests coming from the presentation layer via the business logic layer (Hiren Dhaduk 2021; Lanars LLC 2021; Silveira, 2021).  
 
-4. **The data service layer:** This layer holds all the application data and ensures the security of the data. IT's quite common for a Flask application to use a PostgreSQL database to store the application data. 
+4. **The data service layer:** This layer holds all the application data and ensures the security of the data. It's quite common for a Flask application to use a PostgreSQL database to store the application data. 
 
 
 Important - mention config to allow connections etc.
@@ -335,13 +335,31 @@ SELECT * FROM table1;
 ```
 (PostgreSQL Documentation, 2022d).
 
-
-
-
-
 <hr>  
 
 ## **Question 12**  
+
+*Conduct research into a web application (app) and answer the following parts:*
+
+eBay is an online two-way marketplace application that connects buyers and seller (StackShare, 2022b).
+
+*a. List and describe the software used by the app.*  
+
+The following software is by eBay:
+
+- JavaScript:  
+- Node.js:  
+- Java:  
+- ES6:  
+- Apache Tomcat:  
+- Cassandra:  
+- Hadoop:  
+- Oracle:  
+- Cloudinary:  
+- Marko:  
+
+
+
 
 <hr>  
 
