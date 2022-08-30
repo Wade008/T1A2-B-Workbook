@@ -345,16 +345,17 @@ eBay is an online two-way marketplace application that connects buyers and selle
 
 *a. List and describe the software used by the app.*  
 
-The following software is by eBay:
+The following software is used by eBay:
 
-- JavaScript:  
-- Node.js:  
-- Java:  
-- ES6:  
-- Apache Tomcat:  
-- Cassandra:  
-- Hadoop:  
-- Oracle:  
+**Application and data:**  
+- JavaScript: A scripting language that is used to develop complex, dynamic features on webpages. JavaScript works with HTML and CSS in the client side browser to store information in variables, target and manipulate text on a webpage, execute code in response to changed conditions and so on. Essentially, JavaScript provides a website with functionality (Mozilla.org, 2022). JavaScript can also use in backend frameworks like node.js (Node.js, 2022).      
+- Node.js: is a free, open source server environment that uses JavaScript to develop the server code. Nod.js can run on multiple operating systems, including Windows, Linux and Mac OSX. Node.js can be used to create a backend web server capable of connecting to a database (and performing create, read, update and delete operations), collecting information via web forms, generating dynamic website content and creating and manipulating files on the server (W3schools.com, 2022b).         
+- Java: Java is a free, open-source programming language. It is a fast, secure object-oriented language, allowing developers to easily structure programs and reuse code. Java works on many platforms, including Windows, Linux, Mac, Raspberry Pi and so on (W3schools.com, 2022a). 
+- ES6: ES6 (or ECMAScript 2015 or ECMAScript 6) is the newer version of JavaScript, which was released in 2015. It is a programming language standard and specifies how the JavaScript programming language should work (Programiz.com, 2022). 
+- Apache Tomcat: is a web server and Servlet container for Java code. Tomcat works on any platform, provided Java in installed. Essentially, it allows Java developers to deploy a Java application, but it can only be used to host Java code (Pavel Fol, 2020).  
+- Cassandra: Cassandra (also known as Apache Cassandra) is a database that can store large amounts of incoming data quickly (nilayshrugged, 2020). It is an open source, distributed, NoSQL database designed to scale quickly (Apache Cassandra, 2016).
+- Hadoop: is an open source framework used to store and process large datasets by clustering multiple computers to analyse information in parallel. Hadoop is capable of processing gigabytes to petabytes of data (Amazon Web Services, Inc., 2022)
+- Oracle: Oracle is a relational database management system (DBMS). It is designed for enterprise data storage and supports SQL as a query language to interact with the database (EDUCBA, 2020).
 - Cloudinary:  
 - Marko:  
 
