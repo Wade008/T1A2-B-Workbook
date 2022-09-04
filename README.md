@@ -356,8 +356,17 @@ The following software is used by eBay:
 - Cassandra: Cassandra (also known as Apache Cassandra) is a database that can store large amounts of incoming data quickly (nilayshrugged, 2020). It is an open source, distributed, NoSQL database designed to scale quickly (Apache Cassandra, 2016).
 - Hadoop: is an open source framework used to store and process large datasets by clustering multiple computers to analyse information in parallel. Hadoop is capable of processing gigabytes to petabytes of data (Amazon Web Services, Inc., 2022)
 - Oracle: Oracle is a relational database management system (DBMS). It is designed for enterprise data storage and supports SQL as a query language to interact with the database (EDUCBA, 2020).
-- Cloudinary:  
-- Marko:  
+- Cloudinary: cloudinary provides online storage for images and videss for websites and apps. Cloudinary makes it easy for website and app customers to upload and manage videos and deliver the media quickly through a fast content delivery network (Cloudinary, 2022).  
+- Marko: extends the HTML language to allow applications to be built in a declarative way. It allows developers to describe how a website interface changes based on user actions/inputs. Marko will automatically update the Document Object Model (DOM) based on user interface changes (Markojs.com, 2022)
+- PayPal: is a utility that allows a wedsite/app to build a payment solution for PayPal users. Developers can integrate PayPal solutions like online checkout, subscriptions and invoicing, making it easy for website users to pay for items using their PayPal account (Paypal.com, 2022). 
+- Twilo: can integrate with a website application to facilitate customer communications via voice, text, chat, video, and email. Website developers can integrate Twilo communication functions through several application program interfaces (APIs). For example, Twilo can help trigger text messages to customers to provide updates on their delivery (Twilo, 2021). 
+- KISSmetrics: 
+- Keen:
+- Flurry:
+- BitBar: 
+- UserTesting:
+- CrowdFlower:
+
 
 
 
