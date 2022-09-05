@@ -360,12 +360,21 @@ The following software is used by eBay:
 - Marko: extends the HTML language to allow applications to be built in a declarative way. It allows developers to describe how a website interface changes based on user actions/inputs. Marko will automatically update the Document Object Model (DOM) based on user interface changes (Markojs.com, 2022)
 - PayPal: is a utility that allows a wedsite/app to build a payment solution for PayPal users. Developers can integrate PayPal solutions like online checkout, subscriptions and invoicing, making it easy for website users to pay for items using their PayPal account (Paypal.com, 2022). 
 - Twilo: can integrate with a website application to facilitate customer communications via voice, text, chat, video, and email. Website developers can integrate Twilo communication functions through several application program interfaces (APIs). For example, Twilo can help trigger text messages to customers to provide updates on their delivery (Twilo, 2021). 
-- KISSmetrics: 
-- Keen:
-- Flurry:
-- BitBar: 
-- UserTesting:
-- CrowdFlower:
+- KISSmetrics: is an online analytics service that allows E-Commernce sites to track metrics like total sales, total revenue, average revenue per person, new visitors, cat-to-purchase conversion rates, and site searches. It is praticularly useful for analysing checkout funnel flows conversion rates of each email advertising campaign (Kissmetrics, 2022). 
+- Keen: is a platform that provides in-product analytics. This platform provides real-time analytics, with in-application data available within seconds of each event. Embedded visualisation is also available (Keen, 2022).  
+- Flurry: is another analytics platform that can be used to mobile app developers gain insights about customers. Customer data can be analysed by age, gender, location, engagement and device information. Flurry also provides information about how users interact with the app itself, to help developers make informed design decisions (Flurry.com, 2022).
+- BitBar: is a web and mobile app testing solution. BitBar allows developers to run automated tests in parallel across browsers and devices(Smartbear.com, 2022). 
+- UserTesting: is a platform that helps facilitate user testing by video recording user reactions as they interact with a web or mobile application. The platform supports end-to-end audience management so app developers can quickly gain insights into how well users respond to their application (UserTesting, 2022). 
+- CrowdFlower: is a data cleansing platform that uses on online workforce to complete data cleaning tasks that algorithms alone would struggle with. Some of the tasks that CrowdFlower can help with include data categorization, image annotation, data mining, sentiment analysis and real-time transcription (Figure-eight.com, 2017).
+- Docker: is platform that package and execute an application in a containerised environment. Docker allows developers to separate their application for the infrastructure, so they can run the application regardless of what is installed on the host computer. Docker containers can also be shared easily, which allows an application to run the same way for each user it's shared with (Docker Documentation, 2022).   
+- Jenkins:  
+- BrowserStack:  
+- Pingdom:  
+- TeamCity:  
+- Apache Mesos:  
+- Honeybadger:  
+- AlertBot:  
+
 
 
 
