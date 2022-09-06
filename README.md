@@ -367,8 +367,8 @@ The following software is used by eBay:
 - UserTesting: is a platform that helps facilitate user testing by video recording user reactions as they interact with a web or mobile application. The platform supports end-to-end audience management so app developers can quickly gain insights into how well users respond to their application (UserTesting, 2022). 
 - CrowdFlower: is a data cleansing platform that uses on online workforce to complete data cleaning tasks that algorithms alone would struggle with. Some of the tasks that CrowdFlower can help with include data categorization, image annotation, data mining, sentiment analysis and real-time transcription (Figure-eight.com, 2017).
 - Docker: is platform that package and execute an application in a containerised environment. Docker allows developers to separate their application for the infrastructure, so they can run the application regardless of what is installed on the host computer. Docker containers can also be shared easily, which allows an application to run the same way for each user it's shared with (Docker Documentation, 2022).   
-- Jenkins:  
-- BrowserStack:  
+- Jenkins: is a free automation tool written in Java (with plugins) which is used to build and test software continuously. Jenkins can also be used to deliver software continuously by working with several testing and deployment solutions. (https://www.edureka.co/blog/what-is-jenkins/#:~:text=Jenkins%20is%20an%20open%2Dsource,to%20obtain%20a%20fresh%20build.) 
+- BrowserStack:   
 - Pingdom:  
 - TeamCity:  
 - Apache Mesos:  
