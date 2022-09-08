@@ -367,12 +367,12 @@ The following software is used by eBay:
 - UserTesting: is a platform that helps facilitate user testing by video recording user reactions as they interact with a web or mobile application. The platform supports end-to-end audience management so app developers can quickly gain insights into how well users respond to their application (UserTesting, 2022). 
 - CrowdFlower: is a data cleansing platform that uses on online workforce to complete data cleaning tasks that algorithms alone would struggle with. Some of the tasks that CrowdFlower can help with include data categorization, image annotation, data mining, sentiment analysis and real-time transcription (Figure-eight.com, 2017).
 - Docker: is platform that package and execute an application in a containerised environment. Docker allows developers to separate their application for the infrastructure, so they can run the application regardless of what is installed on the host computer. Docker containers can also be shared easily, which allows an application to run the same way for each user it's shared with (Docker Documentation, 2022).   
-- Jenkins: is a free automation tool written in Java (with plugins) which is used to build and test software continuously. Jenkins can also be used to deliver software continuously by working with several testing and deployment solutions. (https://www.edureka.co/blog/what-is-jenkins/#:~:text=Jenkins%20is%20an%20open%2Dsource,to%20obtain%20a%20fresh%20build.) 
-- BrowserStack:   
-- Pingdom:  
-- TeamCity:  
-- Apache Mesos:  
-- Honeybadger:  
+- Jenkins: is a free automation tool written in Java (with plugins) which is used to build and test software continuously. Jenkins can also be used to deliver software continuously by working with several testing and deployment solutions (Saurabh, 2016).
+- BrowserStack: is a software testing platform that allows web developers to test an application in multiple browsers and mobile developers to test an application on multiple devices. BrowserStack does not require virtual machines, devices or emulators (Software Testing Help, 2022). 
+- Pingdom: is used to monitor uptime and performance. It is also used to test a web app's performance in development to ensure it functions efficiently before being pushed to production (pingdom.com, 2022).
+- TeamCity: is a solution developed by JetBrains to support continuous integration/continuous deployment. TeamCity works with other building and testing tools, allows developers to visualise DevOps pipeline and integrates with IDEs to run automated tests. Real-time reporting is also available (JetBrains, 2022).   
+- Apache Mesos: is an open source cluster manager that sits between the operating system and the application layer. It's designed for application in clustered environments and combines resources from multiple machines in a cluster into one accessible pool(Allen, 2016)
+- Honeybadger: is a platform that is used to monitor for site errors, display status of a site, manage users, secur   (Honeybadger Documentation, 2022)
 - AlertBot:  
 
 
