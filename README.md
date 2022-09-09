@@ -343,7 +343,7 @@ SELECT * FROM table1;
 
 eBay is an online two-way marketplace application that connects buyers and seller (StackShare, 2022b).
 
-*a. List and describe the software used by the app.*  
+### a. List and describe the software used by the app. 
 
 The following software is used by eBay:
 
@@ -357,7 +357,9 @@ The following software is used by eBay:
 - Hadoop: is an open source framework used to store and process large datasets by clustering multiple computers to analyse information in parallel. Hadoop is capable of processing gigabytes to petabytes of data (Amazon Web Services, Inc., 2022)
 - Oracle: Oracle is a relational database management system (DBMS). It is designed for enterprise data storage and supports SQL as a query language to interact with the database (EDUCBA, 2020).
 - Cloudinary: cloudinary provides online storage for images and videss for websites and apps. Cloudinary makes it easy for website and app customers to upload and manage videos and deliver the media quickly through a fast content delivery network (Cloudinary, 2022).  
-- Marko: extends the HTML language to allow applications to be built in a declarative way. It allows developers to describe how a website interface changes based on user actions/inputs. Marko will automatically update the Document Object Model (DOM) based on user interface changes (Markojs.com, 2022)
+- Marko: extends the HTML language to allow applications to be built in a declarative way. It allows developers to describe how a website interface changes based on user actions/inputs. Marko will automatically update the Document Object Model (DOM) based on user interface changes (Markojs.com, 2022)  
+
+**Utilities:**   
 - PayPal: is a utility that allows a wedsite/app to build a payment solution for PayPal users. Developers can integrate PayPal solutions like online checkout, subscriptions and invoicing, making it easy for website users to pay for items using their PayPal account (Paypal.com, 2022). 
 - Twilo: can integrate with a website application to facilitate customer communications via voice, text, chat, video, and email. Website developers can integrate Twilo communication functions through several application program interfaces (APIs). For example, Twilo can help trigger text messages to customers to provide updates on their delivery (Twilo, 2021). 
 - KISSmetrics: is an online analytics service that allows E-Commernce sites to track metrics like total sales, total revenue, average revenue per person, new visitors, cat-to-purchase conversion rates, and site searches. It is praticularly useful for analysing checkout funnel flows conversion rates of each email advertising campaign (Kissmetrics, 2022). 
@@ -365,15 +367,45 @@ The following software is used by eBay:
 - Flurry: is another analytics platform that can be used to mobile app developers gain insights about customers. Customer data can be analysed by age, gender, location, engagement and device information. Flurry also provides information about how users interact with the app itself, to help developers make informed design decisions (Flurry.com, 2022).
 - BitBar: is a web and mobile app testing solution. BitBar allows developers to run automated tests in parallel across browsers and devices(Smartbear.com, 2022). 
 - UserTesting: is a platform that helps facilitate user testing by video recording user reactions as they interact with a web or mobile application. The platform supports end-to-end audience management so app developers can quickly gain insights into how well users respond to their application (UserTesting, 2022). 
-- CrowdFlower: is a data cleansing platform that uses on online workforce to complete data cleaning tasks that algorithms alone would struggle with. Some of the tasks that CrowdFlower can help with include data categorization, image annotation, data mining, sentiment analysis and real-time transcription (Figure-eight.com, 2017).
+- CrowdFlower: is a data cleansing platform that uses on online workforce to complete data cleaning tasks that algorithms alone would struggle with. Some of the tasks that CrowdFlower can help with include data categorization, image annotation, data mining, sentiment analysis and real-time transcription (Figure-eight.com, 2017).   
+
+**DevOps:**  
 - Docker: is platform that package and execute an application in a containerised environment. Docker allows developers to separate their application for the infrastructure, so they can run the application regardless of what is installed on the host computer. Docker containers can also be shared easily, which allows an application to run the same way for each user it's shared with (Docker Documentation, 2022).   
 - Jenkins: is a free automation tool written in Java (with plugins) which is used to build and test software continuously. Jenkins can also be used to deliver software continuously by working with several testing and deployment solutions (Saurabh, 2016).
 - BrowserStack: is a software testing platform that allows web developers to test an application in multiple browsers and mobile developers to test an application on multiple devices. BrowserStack does not require virtual machines, devices or emulators (Software Testing Help, 2022). 
 - Pingdom: is used to monitor uptime and performance. It is also used to test a web app's performance in development to ensure it functions efficiently before being pushed to production (pingdom.com, 2022).
 - TeamCity: is a solution developed by JetBrains to support continuous integration/continuous deployment. TeamCity works with other building and testing tools, allows developers to visualise DevOps pipeline and integrates with IDEs to run automated tests. Real-time reporting is also available (JetBrains, 2022).   
 - Apache Mesos: is an open source cluster manager that sits between the operating system and the application layer. It's designed for application in clustered environments and combines resources from multiple machines in a cluster into one accessible pool(Allen, 2016)
-- Honeybadger: is a platform that is used to monitor for site errors, display status of a site, manage users, secur   (Honeybadger Documentation, 2022)
-- AlertBot:  
+- Honeybadger: is a platform that is used tos
+- WordPress: is a free open-source content management system that can be used to build websites without a lot of code. When combined with plugins, WordPress can be used to build websites like blogs or forums or even eCommerce sites (Kinsta®, 2022)  
+- G Suite: now known as Google Workspace is a range of productivity and collaboration tools provided by Google for businesses. This suite includes tools like Drive, Gmail, Meet, Chat, Google Docs, and Forms (Google, 2022).
+- InVision: is a collaboration platform that centralises workflow, allowing team members to collaborate at all stages of development (Invisionapp.com, 2018).
+- Balsamiq: is a wire framing tool that allows website designers/developers to draw up their front-end/end user design, before coding the website. It can be used to produce up low resolution and high resolution wireframes, to make development easier(Balsamiq.com, 2022).
+- DocuSign: is a platform that allows businesses to go from using paper signatures to digital signatures. It allows for contract collaboration by providing a secure cloud environment to store, progress and sign documentation (Docusign.com, 2022).  
+- Campaign Monitor: is a simple email marketing and automation tool. It allows users to develop attractive promotional emails using a drag and drop GUI (Campaign Monitor, 2021).
+- FogBugz: is a software project management system that allows users to develop and release software by supporting time tracking, task management bug and issue tracking (Ignitetech.com, 2022).  
+
+###  b. Describe the hardware used to host the app.   
+
+In 2017, eBay began a three-year plan to replatform its backend infrastructure. It decided to design and build its own servers to suit the unique needs of eBay. Basically, eBay took an edge computing approach to redesigning its backend infrastructure by decentralising its cluster of data centers and placing the physical servers within proximity of its customers (Ebayinc.com 2018; Ebayinc.com, 2020).
+
+The edge computing architecture used by eBay involves moving data processing and storage closer to clients devices by utilising a tiered layer of data centers combined with data storage embedded on various devices, where possible (Gamble, 2021). A rough description of the hardware architecture used by eBay is shown below:
+
+- Cloud infrastructure: This is made of a central data center connected to several clustered data centers by fiber.  
+- Edge data center: These data centers are stored close to the clients and connect to the cloud cluster over the internet. For example, an edge data center could be located in Sydney, Australia and connects Australian customers more efficiently.
+- Edge devices: this can include smartphones, tablets and laptops.
+- Notably, in an edge computing infrastructure, the data is stored across all above layers. That is, data is stored on the clients smartphones or laptops, in the edge data centers and also in the cloud data centers.  
+
+(Gamble, 2021)
+
+
+
+
+
+
+
+
+
 
 
 
