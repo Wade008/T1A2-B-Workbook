@@ -357,6 +357,7 @@ The following software is used by eBay:
 - Hadoop: is an open source framework used to store and process large datasets by clustering multiple computers to analyse information in parallel. Hadoop is capable of processing gigabytes to petabytes of data (Amazon Web Services, Inc., 2022)
 - Oracle: Oracle is a relational database management system (DBMS). It is designed for enterprise data storage and supports SQL as a query language to interact with the database (EDUCBA, 2020).
 - Cloudinary: cloudinary provides online storage for images and videss for websites and apps. Cloudinary makes it easy for website and app customers to upload and manage videos and deliver the media quickly through a fast content delivery network (Cloudinary, 2022).  
+- MongoDB: is a NoSQL, non-relational DBMS. It used to store document oriented data (Keep, 2017).
 - Marko: extends the HTML language to allow applications to be built in a declarative way. It allows developers to describe how a website interface changes based on user actions/inputs. Marko will automatically update the Document Object Model (DOM) based on user interface changes (Markojs.com, 2022)  
 
 **Utilities:**   
@@ -413,7 +414,66 @@ In 2013, eBay ran a predominantly Java based tech stack, with their workflow cen
 In relation to data processing and storage, Node.js integrates with Hadoop to via libraries like node-hdfs or webhdfs to allow the eBay web application to process and store vast amounts of data (Fritz, 2015). Node.js also integrates with the Cassanda NoSQL database using a specific driver, cassanda-driver. This then allows the eBay application to store customer/transaction data in a distributed database (Instaclustr, 2022). Notably, both Cassandra and Hadoop are built using the Java programming language (GeeksforGeeks, 2020a). 
 
 #### Utilities and tools  
-While there are many other utilities, DevOps and business tools used by eBay, the one tool that is arguably one of the more important is jenkins.  
+While there are many other utilities, DevOps and business tools used by eBay, the one tool that is arguably one of the more important is jenkins. Ebay uses jenkins to manage its continuous integration/continuous delivery as well as managing its vast dependencies (Kulkarni, 2022).   
+
+
+###  d. Describe the way data is structured within the app  
+
+#### Frontend  
+
+In terms of structuring data on its frontend, eBay, until recently was a largely unstructured website, making it difficult for search engines like Google to easily read information. However, eBay has now implemented a structured approach to displaying its website data using Schema markup. This now makes Google searching for eBay products a lot more effective. Schema markup is imported via Schema.org is written inside HTML tags to clearly identify (structure) eBay's data. Foe example, a content type of "product" can be places inside an HTML tag to identify this section of the website displays product information (Gabriel 2017; Snyder 2020). 
+
+#### Backend   
+
+On the backend, eBay structures it data around its users. Everyone involved in a eBay auction including sellers, buyers and bidders must first be a registered user (eBay Developers Program, 2014). eBay's backend data is vast, but the general trading data structure is listed below:
+
+**Items and Listings:**  
+
+*Sellers data*  
+
+- Listing title  
+- price - buy now and bid prices
+- Duration of listing
+- Listing category  
+- Shipping and costs  
+- Available payment methods  
+- Ship-to-locations  
+(eBay Developers Program, 2014a)
+
+*Product/Item category data*  
+
+- Category data is organised in a hierarchical structure. Starting at level 1, an item might be labeled "Electronics", with categories below this known as leaf categories. For example, Electronics -> Communication -> Phones. All the categories that contain listings are called leaf categories. 
+
+(eBay Developers Program, 2014a)  
+
+*Listing Options data*  
+
+- Standard - descriptive item information is listed be the seller  
+- eBay Catalog product details - the seller references an available eBay catalog item using an eBay Product Identifier (ePID). eBay then prefills the remaining product details. 
+
+(eBay Developers Program, 2014a)  
+
+*Registered eBay user data*  
+
+- Registered eBay user data is structured to indicate a unique user ID and by indicating their various roles such as store owner, buyer, bidder, seller and/or developer.   
+
+(eBay Developers Program, 2014a)  
+
+*Order and Transaction data*  
+
+- Order data is created when someone agrees to purchase an item. For example, a buyer wins an auction. Notably, a order data item can have many quantities assigned to it, indicating some has agreed to purchase multiples of the same item.  
+- Transaction data is created when some has purchased the ordered item. The transaction object then contains the information for the one order item.
+
+eBay Developers Program, 2014a)  
+
+
+
+#### Big Data and Analytics   
+
+Big Data 
+
+(Liang, 2019)
+
 
 
 
