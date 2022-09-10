@@ -466,25 +466,23 @@ On the backend, eBay structures it data around its users. Everyone involved in a
 
 eBay Developers Program, 2014a)  
 
-
-
 #### Big Data and Analytics   
 
-Big Data 
+A significant amount of data is used by eBay to gain insights into many areas from customer behaviour to data asset usage. The data analsyed by eBay can be structured, unstructured or semi-structured. This data is first cleansed and feed into Hadoop where it is structured in a data lake. Once in this structure analyst are able to query the data to gain the relevant insights.     
 
 (Liang, 2019)
 
 
+### e. Identify entities which must be tracked by the app 
 
 
 
 
+### f. Identify the relationships and associations between the entities you have identified in part (e) 
 
 
 
-
-
-
+###  g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
 
 
