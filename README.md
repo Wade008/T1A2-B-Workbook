@@ -160,11 +160,11 @@ Acceptance testing is done to ensure the application as a whole is fit for purpo
 
 Information system security is an ever-changing and expanding field that covers network/infrastructure security and includes auditing and testing. The purpose of information system security is to protect sensitive information from illegal access, alteration or destruction. Notably, information security is a broad umbrella term, with cybersecurity considered a subset of information security. A robust information security program is built on three main concepts or principles, which include confidentiality, integrity and availability. It is considered a requirement that more than one of these principles be implemented in an information security program (Tutorialspoint.com, 2020).   
 
-- **Confidentiality:** This feature is implemented to ensure only authorised people can access the data within a system. Basically, this involves checking each individual who tries to access the application's database is authorised to do so and is allowed to access the specific data they are attempting to view (GeeksforGeeks, 2020). 
+- **Confidentiality:** This feature is implemented to ensure only authorised people can access the data within a system. Basically, this involves checking each individual who tries to access the application's database is authorised to do so and is allowed to access the specific data they are attempting to view (GeeksforGeeks, 2020b). 
 
-- **Integrity:** Integrity of the data is ensured when no unauthorised individual or program alters the data. Also unauthorised alteration of data can occur intentionally or unintentionally, with unintentional alteration occurring when an authorised user accidentally removes or changes data (GeeksforGeeks, 2020).
+- **Integrity:** Integrity of the data is ensured when no unauthorised individual or program alters the data. Also unauthorised alteration of data can occur intentionally or unintentionally, with unintentional alteration occurring when an authorised user accidentally removes or changes data (GeeksforGeeks, 2020b).
 
-- **Availability:** This feature relates to the timeframe in which an authorised user can access or modify data, with the timeframe set to suit the security requirements of a given organisation (GeeksforGeeks, 2020).   
+- **Availability:** This feature relates to the timeframe in which an authorised user can access or modify data, with the timeframe set to suit the security requirements of a given organisation (GeeksforGeeks, 2020b).   
 
 In relation to this project, it is essential that user authentication is implemented as part of the development process in order to meet the confidentiality and integrity requirements. Furthermore, encrypting sensitive data held in the database is also essential. However, it is also considered best practice to implement role management and access control, with the aim of giving as little privilege as possible to limit the chances of a data breach. Multifactor authentication and timed access is also important to consider for this project, with timed access helping to meet the availability requirement mentioned above (Jones, 2018). 
 
@@ -341,14 +341,14 @@ SELECT * FROM table1;
 
 *Conduct research into a web application (app) and answer the following parts:*
 
-eBay is an online two-way marketplace application that connects buyers and seller (StackShare, 2022b).
+eBay is an online two-way marketplace application that connects buyers and sellers.  (StackShare, 2022b).
 
 ### a. List and describe the software used by the app. 
 
 The following software is used by eBay:
 
 **Application and data:**  
-- JavaScript: A scripting language that is used to develop complex, dynamic features on webpages. JavaScript works with HTML and CSS in the client side browser to store information in variables, target and manipulate text on a webpage, execute code in response to changed conditions and so on. Essentially, JavaScript provides a website with functionality (Mozilla.org, 2022). JavaScript can also use in backend frameworks like node.js (Node.js, 2022).      
+- JavaScript: A scripting language that is used to develop complex, dynamic features on webpages. JavaScript works with HTML and CSS in the client side browser to store information in variables, target and manipulate text on a webpage, execute code in response to changed conditions and so on. Essentially, JavaScript provides a website with functionality (Mozilla.org, 2022). JavaScript is also use in backend frameworks like node.js (Node.js, 2022).      
 - Node.js: is a free, open source server environment that uses JavaScript to develop the server code. Nod.js can run on multiple operating systems, including Windows, Linux and Mac OSX. Node.js can be used to create a backend web server capable of connecting to a database (and performing create, read, update and delete operations), collecting information via web forms, generating dynamic website content and creating and manipulating files on the server (W3schools.com, 2022b).         
 - Java: Java is a free, open-source programming language. It is a fast, secure object-oriented language, allowing developers to easily structure programs and reuse code. Java works on many platforms, including Windows, Linux, Mac, Raspberry Pi and so on (W3schools.com, 2022a). 
 - ES6: ES6 (or ECMAScript 2015 or ECMAScript 6) is the newer version of JavaScript, which was released in 2015. It is a programming language standard and specifies how the JavaScript programming language should work (Programiz.com, 2022). 
@@ -376,7 +376,9 @@ The following software is used by eBay:
 - Pingdom: is used to monitor uptime and performance. It is also used to test a web app's performance in development to ensure it functions efficiently before being pushed to production (pingdom.com, 2022).
 - TeamCity: is a solution developed by JetBrains to support continuous integration/continuous deployment. TeamCity works with other building and testing tools, allows developers to visualise DevOps pipeline and integrates with IDEs to run automated tests. Real-time reporting is also available (JetBrains, 2022).   
 - Apache Mesos: is an open source cluster manager that sits between the operating system and the application layer. It's designed for application in clustered environments and combines resources from multiple machines in a cluster into one accessible pool(Allen, 2016)
-- Honeybadger: is a platform that is used tos
+- Honeybadger: is a platform that is used to monitor site uptime, errors, site status in real-time (Honeybadger Documentation, 2022)
+
+**Business Tools**  
 - WordPress: is a free open-source content management system that can be used to build websites without a lot of code. When combined with plugins, WordPress can be used to build websites like blogs or forums or even eCommerce sites (Kinsta®, 2022)  
 - G Suite: now known as Google Workspace is a range of productivity and collaboration tools provided by Google for businesses. This suite includes tools like Drive, Gmail, Meet, Chat, Google Docs, and Forms (Google, 2022).
 - InVision: is a collaboration platform that centralises workflow, allowing team members to collaborate at all stages of development (Invisionapp.com, 2018).
@@ -385,7 +387,7 @@ The following software is used by eBay:
 - Campaign Monitor: is a simple email marketing and automation tool. It allows users to develop attractive promotional emails using a drag and drop GUI (Campaign Monitor, 2021).
 - FogBugz: is a software project management system that allows users to develop and release software by supporting time tracking, task management bug and issue tracking (Ignitetech.com, 2022).  
 
-###  b. Describe the hardware used to host the app.   
+### b. Describe the hardware used to host the app.   
 
 In 2017, eBay began a three-year plan to replatform its backend infrastructure. It decided to design and build its own servers to suit the unique needs of eBay. Basically, eBay took an edge computing approach to redesigning its backend infrastructure by decentralising its cluster of data centers and placing the physical servers within proximity of its customers (Ebayinc.com 2018; Ebayinc.com, 2020).
 
@@ -396,7 +398,27 @@ The edge computing architecture used by eBay involves moving data processing and
 - Edge devices: this can include smartphones, tablets and laptops.
 - Notably, in an edge computing infrastructure, the data is stored across all above layers. That is, data is stored on the clients smartphones or laptops, in the edge data centers and also in the cloud data centers.  
 
-(Gamble, 2021)
+(Gamble, 2021)  
+
+### c. Describe the interaction of technologies within the app 
+
+#### Frontend  
+
+Marko (a front-end framework) is used by eBay to develop the eBay user interface (UI). This platform extends the HTML and CSS languages and is used with JavaScript to render webpages dynamically from the backend (Couriol et al., 2021).  
+
+#### Backend   
+
+In 2013, eBay ran a predominantly Java based tech stack, with their workflow centered around Java and the Java Virtual Machine (JVM); however, shortly after this time, eBay began pivoting towards Node.js to support its backend (Padmanabhan, 2013). Node.js is used to develop server-side applications and is a JavaScript runtime environment. Node.js provides a light weight web-client API and works with the Marko framework mentioned above, and a pool of other backend services, to render webpages dynamically (Rupley, 2016). 
+
+In relation to data processing and storage, Node.js integrates with Hadoop to via libraries like node-hdfs or webhdfs to allow the eBay web application to process and store vast amounts of data (Fritz, 2015). Node.js also integrates with the Cassanda NoSQL database using a specific driver, cassanda-driver. This then allows the eBay application to store customer/transaction data in a distributed database (Instaclustr, 2022). Notably, both Cassandra and Hadoop are built using the Java programming language (GeeksforGeeks, 2020a). 
+
+#### Utilities and tools  
+While there are many other utilities, DevOps and business tools used by eBay, the one tool that is arguably one of the more important is jenkins.  
+
+
+
+
+
 
 
 
