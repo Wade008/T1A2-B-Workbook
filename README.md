@@ -18,7 +18,8 @@ Essentially, web application architecture is a plan that describes the interacti
 
 In general, modern web applications use a layered architecture comprised of presentation, business logic, persistence (database access) and data service layers (Hiren Dhaduk 2021; Lanars LLC 2021). Notably, Flask is very useful for developing the business logic layer of a web application. A modern Flask application also serves HTML, CSS and JavaScript to provide a presentation layer and is also capable of working with any database to provide persistence and data service layers (Lott, 2022). The image below outlines the general layers of a modern web application's architecture. 
 
-![Layers of web architecture](https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture3.png)
+![Layers of web architecture](https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture3.png)  
+
 (Hiren Dhaduk, 2021)
 
 ### A typical Flask application   
