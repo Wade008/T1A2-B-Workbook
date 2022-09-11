@@ -475,7 +475,23 @@ A significant amount of data is used by eBay to gain insights into many areas fr
 
 ### e. Identify entities which must be tracked by the app 
 
+The eBay entities are listed below 
 
+- Users: anyone can view items on eBay but to be able to buy or sell the person must register as an eBay user. Once registered, users can select which role/s suit them best. These roles are listed below, where each role could be considered as its own entity:  
+    - Buyer: a buyer is someone who intends to buy an item via an auction or direct sale.  
+    - Seller: is someone who wants to auction an item or sell it directly to a buyer
+    - Store owner: a store owner is someone with their own store that wants to use eBay to sell their goods.  
+
+- Addresses: the addresses associated with users 
+- Items (products): the items to be sold on eBay 
+- Item categories: items are grouped in categories. eBay uses a hierarchical structure to organise its item categories.  
+- Listings: a listing is an eBay entity where an item is for sale.
+- Listing types: Different listing types include fixed-price, auctions, classified ads.  
+- Order line items (Transactions): This entity indicates a buyer's intention to purchase one or more identical items.
+- Checkout: is an entity that stores the data relating to the tr 
+- Feedback: 
+
+(eBay Developers Program, 2014a)
 
 
 ### f. Identify the relationships and associations between the entities you have identified in part (e) 
