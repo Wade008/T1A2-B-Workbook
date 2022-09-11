@@ -488,15 +488,24 @@ The eBay entities are listed below
 - Listings: a listing is an eBay entity where an item is for sale.
 - Listing types: Different listing types include fixed-price, auctions, classified ads.  
 - Order line items (Transactions): This entity indicates a buyer's intention to purchase one or more identical items.
-- Checkout: is an entity that stores the data relating to the tr 
-- Feedback: 
+- Checkout: is an entity that stores the data relating to the transaction between the buyer and the seller. 
+- Feedback: this entity is where the buyer can provide feedback to the seller and other eBay users about the purchased item and buying experience. 
 
 (eBay Developers Program, 2014a)
 
 
 ### f. Identify the relationships and associations between the entities you have identified in part (e) 
 
+Relationships between entities are explained below
 
+- Users: users are related to the role entities in a **one-to-one relationship**. That is, one user can register as one buyer, one seller or one store. Notably, one user can register as all three. 
+- Addresses: a user can have more than one address. A user might have a home address, shipping from address, shipping to address and a delivery address. Therefore, a user entity is related to the addresses' entity in a **one-to-many relationship**. That is, one user can have many addresses.  
+- Items (products): items can be added by sellers or stores and one seller/store can add many items so the relationship between sellers and items and stores and items is **one-to-many**. For example, one seller can add many items.   
+- Item categories: Each item must be assigned to a category and such one category can be assigned to many items. This is there for **one-to-many relationship**.
+- Listings: listings are essentially 'advertisements' for items be sold. It this case, one item can be listed many times, so this is a **one-to-many relationship**.
+- Listing types: describe the type of listing such as auction or direct sale. A listing can have only one type, but a listing type can have many listings. This is a **one-to-many relationship**. 
+- Buyers: in terms of auctions, a buyer can bid for many listings and a listing can have many bids. In this case, this relationship is **many-to-many**. However, if the listing is purchase only, then the relationship would become a **one-to-many relationship*. That is, one buyer could purchase many listings and one listing could only have one buyer. In the case of auctions, a joining 'bidding' table would need to be built to deal with the many -to-many relationship.
+- Order line items (Transactions): 
 
 ###  g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
