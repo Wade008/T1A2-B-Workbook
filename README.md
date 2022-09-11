@@ -31,10 +31,7 @@ The architecture of a typical flask application is explained below in the contex
 
 3. **Persistence (database access) layer:** The persistence layer works closely with the business logic layer and provides a portal to the stored data in the database service layer. In relation to Flask, models are used to link the flask application with the database/s. Models are python code used to interact with the database and can translate python code into the database language like SQL. For example a Flask application using a PostgreSQL database could use a python library called Flask-SQLAlchemy to allow the application to communicate with the database using python code. Essentially, models are used to facilitate the CRUD operations for the application by executing the GET, POST, PUT and DELETE requests coming from the presentation layer via the business logic layer (Hiren Dhaduk 2021; Lanars LLC 2021; Silveira, 2021).  
 
-4. **The data service layer:** This layer holds all the application data and ensures the security of the data. It's quite common for a Flask application to use a PostgreSQL database to store the application data. 
-
-
-Important - mention config to allow connections etc.
+4. **The data service layer:** This layer holds all the application data and ensures the security of the data. It's quite common for a Flask application to use a PostgreSQL database to store the application data (Hiren Dhaduk 2021; Lanars LLC 2021; Silveira, 2021).   
 
 <hr>  
 
@@ -419,9 +416,14 @@ While there are many other utilities, DevOps and business tools used by eBay, th
 
 ###  d. Describe the way data is structured within the app  
 
+In 2017, eBay was running over 3,000 non-relational database instances and was using MongoDB extensively. Therefore, it's likely that eBay structures some of its data in documents and collections (Keep, 2017).   
+
+A document is a unit of storage in a MongoDB database and uses JavaScript Object Notation (JSON). Also, the term object is often used to refer to a document. This structure uses a "key", "value" pair arrangement, where the key in a JSON object is like a column in a relational database table. And a whole document is analogous to a row in a relational database table. A group of similar documents is known as a collection, which is comparable to a table of data in a relational sense (w3resource, 2022)
+
 #### Frontend  
 
-In terms of structuring data on its frontend, eBay, until recently was a largely unstructured website, making it difficult for search engines like Google to easily read information. However, eBay has now implemented a structured approach to displaying its website data using Schema markup. This now makes Google searching for eBay products a lot more effective. Schema markup is imported via Schema.org is written inside HTML tags to clearly identify (structure) eBay's data. Foe example, a content type of "product" can be places inside an HTML tag to identify this section of the website displays product information (Gabriel 2017; Snyder 2020). 
+In terms of structuring data on its frontend, eBay, until recently was a largely unstructured website, making it difficult for search engines like Google to easily read information. However, eBay lhing for eBay products a lot more effective. Schema markup is imported via Schema.org is written inside HTML tags to clearly identify (structure) eBay's data. Foe example, a content type of "product" can be places inside an HTML tag to identify this section of the website displays product information (Gabriel 2017; Snyder 2020). 
+
 
 #### Backend   
 
@@ -487,7 +489,7 @@ The eBay entities are listed below
 - Item categories: items are grouped in categories. eBay uses a hierarchical structure to organise its item categories.  
 - Listings: a listing is an eBay entity where an item is for sale.
 - Listing types: Different listing types include fixed-price, auctions, classified ads.  
-- Order line items (Transactions): This entity indicates a buyer's intention to purchase one or more identical items.
+- Orders: This entity indicates a buyer's intention to purchase one or more identical items.
 - Checkout: is an entity that stores the data relating to the transaction between the buyer and the seller. 
 - Feedback: this entity is where the buyer can provide feedback to the seller and other eBay users about the purchased item and buying experience. 
 
@@ -504,15 +506,17 @@ Relationships between entities are explained below
 - Item categories: Each item must be assigned to a category and such one category can be assigned to many items. This is there for **one-to-many relationship**.
 - Listings: listings are essentially 'advertisements' for items be sold. It this case, one item can be listed many times, so this is a **one-to-many relationship**.
 - Listing types: describe the type of listing such as auction or direct sale. A listing can have only one type, but a listing type can have many listings. This is a **one-to-many relationship**. 
-- Buyers: in terms of auctions, a buyer can bid for many listings and a listing can have many bids. In this case, this relationship is **many-to-many**. However, if the listing is purchase only, then the relationship would become a **one-to-many relationship*. That is, one buyer could purchase many listings and one listing could only have one buyer. In the case of auctions, a joining 'bidding' table would need to be built to deal with the many -to-many relationship.
-- Order line items (Transactions): 
+- Buyers: in terms of auctions, a buyer can bid for many listings and a listing can have many bids. In this case, this relationship is **many-to-many**. However, if the listing is purchase only, then the relationship would become a **one-to-many relationship*. That is, one buyer could order many listings and one listing could only have one buyer. In the case of auctions, a joining 'bidding' table would need to be built to deal with the many-to-many relationship.  
+- Orders : this entity has a one-to-one relationship with the listing entity. That is, one listing relates to one order. Orders also relate to buyers in that one buyer can place many orders for different listings.
+- Checkout: this entity is related to the orders entity in a **one-to-many relationship**. One checkout instance can have many order items.  
+- Feedback: relates to one listing item and many buyers. The relationship between listing item and buyer is **one-to-many**. One feedback item also relates to one successful transaction item (**one-to-one**). That is, that is, an item must be purchased before feedback can be given.  
 
 ###  g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
+An example of the eBay schema is shown below. The Entity Relationship Diagram (ERD) has been developed using crow's foot notation. 
 
 
-
-
+![eBay auction ERD](/eBay_ERD.png)
 
 
 
