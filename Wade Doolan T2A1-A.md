@@ -18,8 +18,7 @@ Essentially, web application architecture is a plan that describes the interacti
 
 In general, modern web applications use a layered architecture comprised of presentation, business logic, persistence (database access) and data service layers (Hiren Dhaduk 2021; Lanars LLC 2021). Notably, Flask is very useful for developing the business logic layer of a web application. A modern Flask application also serves HTML, CSS and JavaScript to provide a presentation layer and is also capable of working with any database to provide persistence and data service layers (Lott, 2022). The image below outlines the general layers of a modern web application's architecture. 
 
-![Layers of web architecture](https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture3.png)  
-
+![Layers of web architecture](https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture3.png)
 (Hiren Dhaduk, 2021)
 
 ### A typical Flask application   
@@ -230,11 +229,6 @@ In order to meet the relevant legal obligations listed above, the flask project 
 - Seeking further legal advice to ensure all privacy requirements have been meet (Qld.gov.au, 2022). 
 
 
-
-
-
-
-
 <hr>  
 
 ## **Question 9**  
@@ -244,7 +238,7 @@ In the relational database model developed by E.F. Codd in the 1970s, data is st
 
 Importantly, each table in a database has one or more columns that will hold a unique identifier called a **primary key**. Again, using the CUSTOMER table below as an example, the Customer ID column/attribute holds the primary key and is used to uniquely identify each customer. The primary key cannot be duplicated within a table. Any unique information can be used as a primary key, such as a phone number or email address; however, a database can also be configured to assign the primary key automatically. Relationships within the relational database model are represented using a foreign key, which is a column in one table referencing the primary key of another table. The image below shows the relationship between the CUSTOMER table and the ORDER table, with the ORDER table column Customer ID (foreign key) containing the related Customer ID value from the CUSTOMER table. This allows the database to establish a relationship to link each order with the relevant customer (Google Cloud, 2022).     
 
-![Relational database](https://lh3.googleusercontent.com/_j-DAQG6tx5MwOwhdNFkHMou4fWHRuEbzYr3wEaRClkCnC3W2TR8CnMsAvmVX-rgOICpWX-wrBPc=e14-rj-sc0xffffff-h1000-w1000)
+![Relational_database](https://lh3.googleusercontent.com/_j-DAQG6tx5MwOwhdNFkHMou4fWHRuEbzYr3wEaRClkCnC3W2TR8CnMsAvmVX-rgOICpWX-wrBPc=e14-rj-sc0xffffff-h1000-w1000)
 (Google Cloud, 2022)  
 
 <hr>  
@@ -263,8 +257,7 @@ Domain relates to the type and range of values that can be stored in a specific 
 ### Referential integrity  
 This type of data integrity is used to ensure data remains consistent between two tables. Referential integrity constraints relate to how foreign keys are used to ensure updates, deletions and additions in the database do not affect the data integrity. This constraint stipulates that the foreign key value in a table that refers to the primary key in another table must be present in the other table or null. The example below highlights this constraint visually (Afteracademy.com, 2019).    
 
-![Referential integrity example](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/what-is-data-integrity-referential-integrity-155347826035d439.jpg)
-
+![Referential integrity example](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/what-is-data-integrity-referential-integrity-155347826035d439.jpg)  
 (Afteracademy.com, 2019)
 
 ### User defined integrity  
@@ -518,11 +511,7 @@ Relationships between entities are explained below
 An example of the eBay schema is shown below. The Entity Relationship Diagram (ERD) has been developed using crow's foot notation. 
 
 
-![eBay auction ERD](/eBay_ERD.png)
-
-
-
-
+![eBay_auction_ERD](https://user-images.githubusercontent.com/41134143/189522218-409a9ec0-f377-4dff-8d27-205e7b9c6b2a.png)  
 <hr>  
 
 
