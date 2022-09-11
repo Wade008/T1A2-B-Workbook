@@ -31,7 +31,7 @@ The architecture of a typical flask application is explained below in the contex
 
 3. **Persistence (database access) layer:** The persistence layer works closely with the business logic layer and provides a portal to the stored data in the database service layer. In relation to Flask, models are used to link the flask application with the database/s. Models are python code used to interact with the database and can translate python code into the database language like SQL. For example a Flask application using a PostgreSQL database could use a python library called Flask-SQLAlchemy to allow the application to communicate with the database using python code. Essentially, models are used to facilitate the CRUD operations for the application by executing the GET, POST, PUT and DELETE requests coming from the presentation layer via the business logic layer (Hiren Dhaduk 2021; Lanars LLC 2021; Silveira, 2021).  
 
-4. **The data service layer:** This layer holds all the application data and ensures the security of the data. It's quite common for a Flask application to use a PostgreSQL database to store the application data (Hiren Dhaduk 2021; Lanars LLC 2021; Silveira, 2021).   
+4. **The data service layer:** This layer holds all the application data and ensures the security of the data. It's quite common for a Flask application to use a PostgreSQL database to store the application data in a relational data structure (Hiren Dhaduk 2021; Lanars LLC 2021; Silveira, 2021).   
 
 <hr>  
 
@@ -39,7 +39,7 @@ The architecture of a typical flask application is explained below in the contex
 
 *Identify a database management system (DBMS) commonly used in web applications (including Flask) and discuss the pros and cons of this database.*  
 
-PostgreSQL is an open source, object-relational database system the utilises the Structured Query Language (SQL)(Postgresql.org, 2022). PostreSQL works well for many programming languages including Pythin, .Net, C, C++, Java Node.js(JavaScript) and PHP to name a few (ScaleGrid, 2021). Like all technologies, there are pros and cons associated with using PostgreSQL.
+PostgreSQL is an open source, object-relational database system the utilises the Structured Query Language (SQL)(Postgresql.org, 2022). PostreSQL works well for many programming languages including Python, .Net, C, C++, Java Node.js (JavaScript) and PHP to name a few (ScaleGrid, 2021). Like all technologies, there are pros and cons associated with using PostgreSQL.
 
 ### Pros of PostgreSQL   
 
@@ -120,6 +120,7 @@ While there are a number of version control systems available, this question wil
     - update the local version of main inline with the central version: ``` git pull```
     - merge the local feature branch onto local main: ```git pull origin new-menu-feature```
     - pushing all updates back to the central repository: ```git push```  
+
 (Atlassian, 2022b)
 
 <hr>  
@@ -342,10 +343,10 @@ eBay is an online two-way marketplace application that connects buyers and selle
 
 ### a. List and describe the software used by the app. 
 
-The following software is used by eBay:
+The following software is used by eBay (StackShare, 2022a):
 
 **Application and data:**  
-- JavaScript: A scripting language that is used to develop complex, dynamic features on webpages. JavaScript works with HTML and CSS in the client side browser to store information in variables, target and manipulate text on a webpage, execute code in response to changed conditions and so on. Essentially, JavaScript provides a website with functionality (Mozilla.org, 2022). JavaScript is also use in backend frameworks like node.js (Node.js, 2022).      
+- JavaScript: is a scripting language that is used to develop complex, dynamic features on webpages. JavaScript works with HTML and CSS in the client side browser to store information in variables, target and manipulate text on a webpage, execute code in response to changed conditions and so on. Essentially, JavaScript provides a website with functionality (Mozilla.org, 2022). JavaScript is also use in backend frameworks like node.js (Node.js, 2022).      
 - Node.js: is a free, open source server environment that uses JavaScript to develop the server code. Nod.js can run on multiple operating systems, including Windows, Linux and Mac OSX. Node.js can be used to create a backend web server capable of connecting to a database (and performing create, read, update and delete operations), collecting information via web forms, generating dynamic website content and creating and manipulating files on the server (W3schools.com, 2022b).         
 - Java: Java is a free, open-source programming language. It is a fast, secure object-oriented language, allowing developers to easily structure programs and reuse code. Java works on many platforms, including Windows, Linux, Mac, Raspberry Pi and so on (W3schools.com, 2022a). 
 - ES6: ES6 (or ECMAScript 2015 or ECMAScript 6) is the newer version of JavaScript, which was released in 2015. It is a programming language standard and specifies how the JavaScript programming language should work (Programiz.com, 2022). 
@@ -525,4 +526,204 @@ An example of the eBay schema is shown below. The Entity Relationship Diagram (E
 
 
 ## References  
+
+Afteracademy.com. (2019). What is Data Integrity? [online] Available at: https://afteracademy.com/blog/what-is-data-integrity [Accessed 18 Aug. 2022].  
+
+Aipm.com.au. (2022). What is Agile Project Management? [online] Available at: https://www.aipm.com.au/blog/articles/what-is-agile-project-management [Accessed 6 Aug. 2022].   
+
+Alertbot.com. (2022). AlertBot: Advanced Synthetic Monitoring Made Easy. [online] Available at: https://www.alertbot.com/features.html [Accessed 9 Sep. 2022].  
+
+Allen, A. (2016). Apache Mesos. [online] SearchITOperations. Available at: https://www.techtarget.com/searchitoperations/definition/Apache-Mesos [Accessed 8 Sep. 2022].  
+
+AltexSoft. (2019). Comparing Database Management Systems: MySQL, PostgreSQL, MSSQL Server, MongoDB, Elasticsearch, and others. [online] Available at: https://www.altexsoft.com/blog/business/comparing-database-management-systems-mysql-postgresql-mssql-server-mongodb-elasticsearch-and-others/ [Accessed 23 Aug. 2022].  
+
+Amazon Web Services, Inc. (2022). What is Hadoop? [online] Available at: https://aws.amazon.com/emr/details/hadoop/what-is-hadoop/ [Accessed 30 Aug. 2022].  
+
+Apache Cassandra. (2016). Apache Cassandra | Apache Cassandra Documentation. [online] Available at: https://cassandra.apache.org/_/index.html [Accessed 30 Aug. 2022].  
+
+Atlassian (2022a). Get started with agile project management | Atlassian. [online] Atlassian. Available at: https://www.atlassian.com/agile/project-management#:~:text=What%20is%20agile%20project%20management,customer%20feedback%20with%20every%20iteration. [Accessed 6 Aug. 2022].  
+
+Atlassian (2022b). Git Feature Branch Workflow | Atlassian Git Tutorial. [online] Atlassian. Available at: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow [Accessed 8 Aug. 2022].   
+
+Atlassian (2022c). Git Workflow | Atlassian Git Tutorial. [online] Atlassian. Available at: https://www.atlassian.com/git/tutorials/comparing-workflows [Accessed 8 Aug. 2022].  
+
+Balsamiq.com. (2022). Balsamiq. Rapid, Effective and Fun Wireframing Software | Balsamiq. [online] Available at: https://balsamiq.com/ [Accessed 9 Sep. 2022].  
+
+Belani, G. (2022). Source Code Management Best Practices. [online] DevOps.com. Available at: https://devops.com/source-code-management-best-practices/ [Accessed 8 Aug. 2022].  
+
+Butani, A. (2022). 5 essential patterns of software architecture. [online] Enable ArchAfteracademy.com. (2019). What is Data Integrity? [online] Available at: https://afteracademy.com/blog/what-is-data-integrity [Accessed 18 Aug. 2022].  
+
+Aipm.com.au. (2022). What is Agile Project Management? [online] Available at: https://www.aipm.com.au/blog/articles/what-is-agile-project-management [Accessed 6 Aug. 2022].  
+
+Alertbot.com. (2022). AlertBot: Advanced Synthetic Monitoring Made Easy. [online] Available at: https://www.alertbot.com/features.html [Accessed 9 Sep. 2022].  
+
+Allen, A. (2016). Apache Mesos. [online] SearchITOperations. Available at: https://www.techtarget.com/searchitoperations/definition/Apache-Mesos [Accessed 8 Sep. 2022].  
+
+AltexSoft. (2019). Comparing Database Management Systems: MySQL, PostgreSQL, MSSQL Server, MongoDB, Elasticsearch, and others. [online] Available at: https://www.altexsoft.com/blog/business/comparing-database-management-systems-mysql-postgresql-mssql-server-mongodb-elasticsearch-and-others/ [Accessed 23 Aug. 2022].  
+
+Amazon Web Services, Inc. (2022). What is Hadoop? [online] Available at: https://aws.amazon.com/emr/details/hadoop/what-is-hadoop/ [Accessed 30 Aug. 2022].  
+
+Apache Cassandra. (2016). Apache Cassandra | Apache Cassandra Documentation. [online] Available at: https://cassandra.apache.org/_/index.html [Accessed 30 Aug. 2022].  
+
+Atlassian (2022a). Get started with agile project management | Atlassian. [online] Atlassian. Available at: https://www.atlassian.com/agile/project-management#:~:text=What%20is%20agile%20project%20management,customer%20feedback%20with%20every%20iteration. [Accessed 6 Aug. 2022].  
+
+Atlassian (2022b). Git Feature Branch Workflow | Atlassian Git Tutorial. [online] Atlassian. Available at: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow [Accessed 8 Aug. 2022].  
+
+Atlassian (2022c). Git Workflow | Atlassian Git Tutorial. [online] Atlassian. Available at: https://www.atlassian.com/git/tutorials/comparing-workflows [Accessed 8 Aug. 2022].  
+
+Balsamiq.com. (2022). Balsamiq. Rapid, Effective and Fun Wireframing Software | Balsamiq. [online] Available at: https://balsamiq.com/ [Accessed 9 Sep. 2022].  
+
+Belani, G. (2022). Source Code Management Best Practices. [online] DevOps.com. Available at: https://devops.com/source-code-management-best-practices/ [Accessed 8 Aug. 2022].  
+
+Butani, A. (2022). 5 essential patterns of software architecture. [online] Enable Architect. Available at: https://www.redhat.com/architect/5-essential-patterns-software-architecture [Accessed 6 Aug. 2022].  
+
+Campaign Monitor. (2021). Email Marketing | Email Software | Campaign Monitor. [online] Available at: https://www.campaignmonitor.com/ [Accessed 9 Sep. 2022].  
+
+Cloudinary. (2022). Cloudinary Frequently Asked Questions. [online] Available at: https://cloudinary.com/faq#:~:text=What%20does%20Cloudinary%20do%3F,%2C%20manipulations%2C%20optimizations%20to%20delivery. [Accessed 4 Sep. 2022].  
+
+Couriol, B., Carniato, R., Rawlings, M. and Piercey, D. (2021). eBay’s UI Framework Marko Adds Optimized Reactivity Model - Q&A with Marko’s Development Team. [online] InfoQ. Available at: https://www.infoq.com/articles/ebay-marko-performance-reactivity-model/ [Accessed 10 Sep. 2022].  
+
+Csulb.edu. (2022). Database Design - DDL & DML. [online] Available at: https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/ddldml.php [Accessed 19 Aug. 2022].  
+
+Docker Documentation. (2022). Docker overview. [online] Available at: https://docs.docker.com/get-started/overview/ [Accessed 5 Sep. 2022].  
+
+Docusign.com. (2022). Docusign | #1 in eSignature & Agreement Cloud. [online] Available at: https://www.docusign.com/ [Accessed 9 Sep. 2022].  
+
+eBay Developers Program (2014a). Basic Building Blocks. [online] Ebay.com. Available at: https://developer.ebay.com/devzone/guides/features-guide/content/basics/ebay-buildingblocks.html [Accessed 10 Sep. 2022].  
+
+eBay Developers Program (2014b). Managing User Information. [online] Ebay.com. Available at: https://developer.ebay.com/devzone/guides/features-guide/content/Development/CRM-UserInformation.html [Accessed 10 Sep. 2022].  
+
+Ebayinc.com. (2013). How We Built eBay’s First Node.js Application. [online] Available at: https://tech.ebayinc.com/engineering/how-we-built-ebays-first-node-js-application/ [Accessed 10 Sep. 2022].  
+
+Ebayinc.com. (2018). eBay Builds Own Servers, Intends to Open Source. [online] Available at: https://www.ebayinc.com/stories/news/ebay-builds-own-servers-intends-to-open-source/ [Accessed 9 Sep. 2022].  
+
+EDUCBA. (2020). What is Oracle? | Features, Importance and Benefits of Oracle. [online] Available at: https://www.educba.com/what-is-oracle/ [Accessed 30 Aug. 2022].  
+
+Figure-eight.com. (2017). CrowdFlower | Love Your Data. [online] Available at: https://visit.figure-eight.com/People-Powered-Data-Enrichment_T [Accessed 5 Sep. 2022].  
+
+Flurry.com. (2022). Free Mobile App Analytics Tools | Flurry. [online] Available at: https://www.flurry.com/analytics/ [Accessed 5 Sep. 2022].  
+
+Fritz, M. (2015). Using Node.js and Hadoop to store distributed data. [online] Packt. Available at: https://www.packt.com/introduction-using-nodejs-hadoops-mapreduce-jobs/ [Accessed 10 Sep. 2022].  
+
+Gabriel (2017). Schema Markup - Best Practice To Improve CTR | seoWorksTM. [online] The SEO Works. Available at: https://www.seoworks.com/how-to-add-schema-markup/ [Accessed 10 Sep. 2022].  
+
+Gamble, M. (2021). An Introduction to Edge Computing Architectures. [online] The Couchbase Blog. Available at: https://www.couchbase.com/blog/edge-computing-architecture-introduction/ [Accessed 9 Sep. 2022].  
+
+GeeksforGeeks. (2020a). Difference Between Hadoop and Cassandra - GeeksforGeeks. [online] Available at: https://www.geeksforgeeks.org/difference-between-hadoop-and-cassandra/ [Accessed 10 Sep. 2022].  
+
+GeeksforGeeks. (2020b). Principle of Information System Security - GeeksforGeeks. [online] Available at: https://www.geeksforgeeks.org/principle-of-information-system-security/ [Accessed 20 Aug. 2022].  
+
+Google (2022). Google Workspace | Business Apps & Collaboration Tools. [online] Google.com. Available at: https://workspace.google.com/intl/en_au/ [Accessed 9 Sep. 2022].  
+
+Google Cloud. (2022). What Is A Relational Database  |  Google Cloud. [online] Available at: https://cloud.google.com/learn/what-is-a-relational-database [Accessed 17 Aug. 2022].  
+
+Heddings, A. (2021). What Is a .gitignore File, And How Do You Configure It? [online] How-To Geek. Available at: https://www.howtogeek.com/devops/what-is-a-gitignore-file-and-how-do-you-configure-it/ [Accessed 21 Aug. 2022].  
+
+Hiren Dhaduk (2021). An Ultimate Guide of Web Application Architecture. [online] Simform - Product Engineering Company. Available at: https://www.simform.com/blog/web-application-architecture/#:~:text=Web%20application%20architecture%20is%20a,for%20a%20better%20web%20experience. [Accessed 25 Aug. 2022].  
+
+Honeybadger Documentation. (2022). Honeybadger Documentation. [online] Available at: https://docs.honeybadger.io/ [Accessed 8 Sep. 2022].  
+
+Ignitetech.com. (2022). FogBugz :: IgniteTech. [online] Available at: https://ignitetech.com/softwarelibrary/fogbugz [Accessed 9 Sep. 2022].  
+
+Instaclustr. (2022). Connect to Apache Cassandra with Node.js. [online] Available at: https://www.instaclustr.com/support/documentation/cassandra/using-cassandra/connect-to-cassandra-with-node-js/ [Accessed 10 Sep. 2022].
+
+Invisionapp.com. (2018). Collaborate better | InVision. [online] Available at: https://www.invisionapp.com/ [Accessed 9 Sep. 2022].
+
+Jash Unadkat (2021). Manual Testing for Beginners | BrowserStack. [online] BrowserStack. Available at: https://www.browserstack.com/guide/manual-testing-tutorial [Accessed 15 Aug. 2022].JetBrains (2022). TeamCity. [online] JetBrains. Available at: https://www.jetbrains.com/teamcity/ [Accessed 8 Sep. 2022].
+
+Jones, J. (2018). 11 Best Practices for Developing Secure Web Applications. [online] Lrswebsolutions.com. Available at: https://www.lrswebsolutions.com/Blog/Posts/32/Website-Security/11-Best-Practices-for-Developing-Secure-Web-Applications/blog-post/ [Accessed 20 Aug. 2022].
+
+Keen. (2022). Query - Keen - Event Streaming Platform. [online] Available at: https://keen.io/platform/query/ [Accessed 5 Sep. 2022].Keep, M. (2017). eBay: Building Mission-Critical Multi-Data Center Applications with MongoDB. [online] MongoDB. Available at: https://www.mongodb.com/blog/post/ebay-building-mission-critical-multi-data-center-applications-with-mongodb [Accessed 10 Sep. 2022].
+
+Kinsta®. (2022). What Is WordPress? Explained for Beginners. [online] Available at: https://kinsta.com/knowledgebase/what-is-wordpress/ [Accessed 9 Sep. 2022].
+
+Kissmetrics. (2022). E-commerce - Kissmetrics. [online] Available at: https://www.kissmetrics.io/ecommerce/ [Accessed 4 Sep. 2022].
+
+Kulkarni, A. (2022). Managing Complex Dependencies with Distributed Architecture at eBay. [online] InfoQ. Available at: https://www.infoq.com/news/2022/04/distributed-arch-ebay/ [Accessed 10 Sep. 2022].
+
+Lanars LLC. (2021). Web application architecture: best practices and guides | Lanars. [online] Available at: https://lanars.com/blog/web-application-architecture-best-practices [Accessed 25 Aug. 2022].
+
+Liang, A. (2019). How eBay Governs its Big Data Fabric. [online] Ebayinc.com. Available at: https://tech.ebayinc.com/engineering/how-ebay-governs-its-big-data-fabric/ [Accessed 10 Sep. 2022].
+
+Lott, S.F. (2022). Modern Python Cookbook - Second Edition. [online] Packtpub.com. Available at: https://subscription.packtpub.com/book/programming/9781800207455/12/ch12lvl1sec21/using-the-flask-framework-for-restful-apis [Accessed 26 Aug. 2022].
+
+Markojs.com. (2022). Getting started | Marko. [online] Available at: https://markojs.com/docs/getting-started/ [Accessed 4 Sep. 2022].
+
+Mozilla.org. (2022). What is JavaScript? - Learn web development | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript [Accessed 30 Aug. 2022].
+
+nilayshrugged (2020). (Canonical recently added Apache Cassandra to its Managed Apps portfolio, based on customer demand. Want any cloud app managed? Reach out to Canonical now. You can also watch this webinar on how Managed Apps will help you maintain focus on your business, for more information.) It’s no secret that organisations have a love-hate relationshi […]. [online] Ubuntu. Available at: https://ubuntu.com/blog/apache-cassandra-top-benefits [Accessed 30 Aug. 2022].
+
+Node.js (2022). About | Node.js. [online] Node.js. Available at: https://nodejs.org/en/about/ [Accessed 30 Aug. 2022].
+
+Padmanabhan, S. (2013). eBay’s Technology Transformation is Made for Evolving Customer Needs. [online] Ebayinc.com. Available at: https://tech.ebayinc.com/engineering/ebays-technology-transformation-is-made-for-evolving-customer-needs/ [Accessed 9 Sep. 2022].
+
+Palletsprojects.com. (2022). Design Decisions in Flask — Flask Documentation (2.2.x). [online] Available at: https://flask.palletsprojects.com/en/2.2.x/design/ [Accessed 25 Aug. 2022].
+
+Pavel Fol (2020). Java Basics: What Is Apache Tomcat? | JRebel by Perforce. [online] JRebel by Perforce. Available at: https://www.jrebel.com/blog/what-is-apache-tomcat [Accessed 30 Aug. 2022].
+
+Paypal.com. (2022). Set up online and mobile payment gateway integration. [online] Available at: https://developer.paypal.com/docs/online/ [Accessed 4 Sep. 2022].
+
+pingdom.com. (2022). WebsitePerformance and Availability Monitoring | Pingdom - Pingdom. [online] Available at: https://www.pingdom.com/ [Accessed 8 Sep. 2022].
+
+PostgreSQL Documentation. (2022a). 6.1. Inserting Data. [online] Available at: https://www.postgresql.org/docs/14/dml-insert.html [Accessed 19 Aug. 2022].
+
+PostgreSQL Documentation. (2022b). 6.2. Updating Data. [online] Available at: https://www.postgresql.org/docs/14/dml-update.html [Accessed 19 Aug. 2022].
+
+PostgreSQL Documentation. (2022c). 6.3. Deleting Data. [online] Available at: https://www.postgresql.org/docs/14/dml-delete.html [Accessed 19 Aug. 2022].
+
+PostgreSQL Documentation. (2022d). 7.1. Overview. [online] Available at: https://www.postgresql.org/docs/14/queries-overview.html [Accessed 19 Aug. 2022].
+
+Postgresql.org. (2022). PostgreSQL: About. [online] Available at: https://www.postgresql.org/about/ [Accessed 23 Aug. 2022].
+
+Programiz.com. (2022). JavaScript ES6. [online] Available at: https://www.programiz.com/javascript/ES6 [Accessed 30 Aug. 2022].
+
+PyPI. (2022). [online] Available at: https://pypi.org/ [Accessed 21 Aug. 2022].Qld.gov.au. (2022). Legal obligations for online businesses | Business Queensland. [online] Available at: https://www.business.qld.gov.au/running-business/digital-business/online-risk-security/legal-obligations [Accessed 22 Aug. 2022].
+
+Readthedocs.io. (2022). Features — Flask-Security 4.1.5 documentation. [online] Available at: https://flask-security-too.readthedocs.io/en/stable/features.html# [Accessed 21 Aug. 2022].
+
+Real Python (2020). Use a Flask Blueprint to Architect Your Applications. [online] Realpython.com. Available at: https://realpython.com/flask-blueprint/ [Accessed 6 Aug. 2022].
+
+Rupley, S. (2016). Node.js: An Open Source Tool On the Rise at eBay. [online] Ebayinc.com. Available at: https://www.ebayinc.com/stories/news/node-js-an-open-source-tool-driving-innovative-development-at-ebay/ [Accessed 10 Sep. 2022].
+
+Saurabh (2016). DevOps Certification Training Course. [online] Edureka. Available at: https://www.edureka.co/blog/what-is-jenkins/#:~:text=Jenkins%20is%20an%20open%2Dsource,to%20obtain%20a%20fresh%20build [Accessed 8 Sep. 2022].
+
+ScaleGrid. (2021). Most Popular PostgreSQL Providers & Deployments In Enterprise. [online] Available at: https://scalegrid.io/blog/postgresql-trends-most-popular-cloud-providers-languages-vacuum-query-management-strategies-deployment-types-in-enterprise/#:~:text=The%20supported%20programming%20languages%20for,languages%20through%20its%20available%20extensions. [Accessed 25 Aug. 2022].
+
+Shaumik Daityari (2022). Regression Testing : Definition, How it works | BrowserStack. [online] BrowserStack. Available at: https://www.browserstack.com/guide/regression-testing [Accessed 17 Aug. 2022].
+
+Silveira, F. (2021). Build a Flask CRUD Application with MVC Architecture. [online] Plainenglish.io. Available at: https://plainenglish.io/blog/flask-crud-application-using-mvc-architecture [Accessed 26 Aug. 2022].
+
+Smartbear.com. (2022). App Testing Solution | CrossBrowserTesting + BitBar | SmartBear. [online] Available at: https://smartbear.com/product/bitbar/ [Accessed 5 Sep. 2022].
+
+Snyder, D. (2020). How Structured Data Changed Everything at eBay. [online] ryte.com. Available at: https://en.ryte.com/magazine/structured-data-changed-everything-ebay [Accessed 10 Sep. 2022]. 
+
+Software Testing Help. (2022). Browserstack Tutorial: App And Browser Testing Platform [GUIDE]. [online] Available at: https://www.softwaretestinghelp.com/browserstack-tutorial/ [Accessed 8 Sep. 2022].
+
+StackShare. (2022a). ebay - ebay Tech Stack. [online] Available at: https://stackshare.io/ebay/ebay [Accessed 29 Aug. 2022].StackShare. (2022b). ebay Engineering. [online] Available at: https://stackshare.io/companies/ebay [Accessed 29 Aug. 2022].
+
+Tech Differences. (2016). Difference Between DDL and DML in DBMS (with Comparison Chart) -Tech Differences. [online] Available at: https://techdifferences.com/difference-between-ddl-and-dml-in-dbms.html [Accessed 18 Aug. 2022].
+
+Techopedia (2013). Object-Relational Database (ORD). [online] Techopedia.com. Available at: https://www.techopedia.com/definition/8714/object-relational-database-ord [Accessed 23 Aug. 2022].  
+
+Techopedia (2022). Data Integrity. [online] Techopedia.com. Available at: https://www.techopedia.com/definition/811/data-integrity-databases [Accessed 18 Aug. 2022]. 
+
+The Office of the Australian Information Commissioner (2018). Australian entities and the EU General Data Protection Regulation (GDPR). [online] Home. Available at: https://www.oaic.gov.au/privacy/guidance-and-advice/australian-entities-and-the-eu-general-data-protection-regulation [Accessed 22 Aug. 2022].  
+
+The Office of the Australian Information Commissioner (2022). Australian Privacy Principles. [online] Home. Available at: https://www.oaic.gov.au/privacy/australian-privacy-principles [Accessed 22 Aug. 2022].  
+
+Tutorialspoint.com. (2020). Principles of Information System Security. [online] Available at: https://www.tutorialspoint.com/principles-of-information-system-security [Accessed 20 Aug. 2022]. 
+
+Twilo (2021). What is Twilio? An introduction to the leading customer engagement platform. [online] What is Twilio? An introduction to the leading customer engagement platform. Available at: https://www.twilio.com/the-current/what-is-twilio-how-does-it-work [Accessed 4 Sep. 2022].
+
+UserTesting. (2022). Human Insight Platform | Customer Experience Narratives | CXNs. [online] Available at: https://www.usertesting.com/platform [Accessed 5 Sep. 2022].
+
+Vaati, E. (2020). How to Handle Exceptions in Flask - Better Programming. [online] Medium. Available at: https://betterprogramming.pub/how-to-handle-exceptions-in-flask-b1d9c151875b [Accessed 21 Aug. 2022].
+
+w3resource. (2022). Databases, documents and collections - w3resource. [online] Available at: https://www.w3resource.com/mongodb/databases-documents-collections.php [Accessed 11 Sep. 2022].
+
+W3schools.com. (2022a). Introduction to Java. [online] Available at: https://www.w3schools.com/java/java_intro.asp [Accessed 30 Aug. 2022].
+
+W3schools.com. (2022b). Node.js Introduction. [online] Available at: https://www.w3schools.com/nodejs/nodejs_intro.asp [Accessed 30 Aug. 2022].
+
+Workfront.com. (2020). Agile Project Management - A Beginner’s Guide | Adobe Workfront. [online] Available at: https://www.workfront.com/project-management/methodologies/agile [Accessed 6 Aug. 2022]. 
 
